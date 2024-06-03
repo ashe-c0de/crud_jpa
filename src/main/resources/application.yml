@@ -8,9 +8,9 @@ spring:
 #        dialect: org.hibernate.dialect.MySQLDialect
     open-in-view: false
   datasource:
-    url: jdbc:mysql://mysql.sqlpub.com:3306/kappa_test?useSSL=false&serverTimezone=UTC
-    username: root_ashe
-    password: b704f87a20a9973d
+    url: jdbc:none:3306/none?useSSL=false&serverTimezone=UTC
+    username: none
+    password: none
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 server:
