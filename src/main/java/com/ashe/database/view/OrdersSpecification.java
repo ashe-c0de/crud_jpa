@@ -7,9 +7,9 @@ import java.time.LocalDate;
 
 public class OrdersSpecification {
 
-    public static Specification<Order> hasCustomerId(Long customerId) {
+    public static Specification<Order> hasCustomerName(String customerName) {
         return (root, query, criteriaBuilder) -> 
-            criteriaBuilder.equal(root.get("customer").get("customerId"), customerId);
+            criteriaBuilder.equal(root.get("customer").get("customerName"), customerName);
     }
 
     public static Specification<Order> hasCurrency(String currency) {

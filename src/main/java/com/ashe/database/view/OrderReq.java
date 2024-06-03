@@ -12,6 +12,8 @@ public class OrderReq extends Page {
 
     private Long customerId;
 
+    private String customerName;
+
     private LocalDate orderDate;
 
     private Integer totalAmount;

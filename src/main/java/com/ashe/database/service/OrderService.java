@@ -31,15 +31,15 @@ public class OrderService {
     }
 
     @Transactional
-    public RestResult create(OrderReq dto) {
+    public RestResult create(OrderReq request) {
         try {
-            Customer customer = customerRepository.findById(dto.getCustomerId()).orElseThrow(() -> new RuntimeException("不存在的客户"));
+            Customer customer = customerRepository.findById(request.getCustomerId()).orElseThrow(() -> new RuntimeException("不存在的客户"));
             Order order = new Order();
             order.setOrderId(snowflakeIdGenerator.nextId());
             order.setCustomer(customer);
             order.setOrderDate(LocalDate.now());
-            order.setTotalAmount(dto.getTotalAmount());
-            order.setCurrency(dto.getCurrency());
+            order.setTotalAmount(request.getTotalAmount());
+            order.setCurrency(request.getCurrency());
             order.setCreatedAt(LocalDateTime.now());
             order.setUpdatedAt(LocalDateTime.now());
             orderRepository.save(order);
@@ -53,8 +53,8 @@ public class OrderService {
         try {
             Pageable pageable = PageRequest.of(dto.getPageNumber(), dto.getPageSize());
             Specification<Order> spec = Specification.where(null);
-            if (dto.getCustomerId() != null) {
-                spec = spec.and(OrdersSpecification.hasCustomerId(dto.getCustomerId()));
+            if (dto.getCustomerName() != null) {
+                spec = spec.and(OrdersSpecification.hasCustomerName(dto.getCustomerName()));
             }
             if (dto.getCurrency() != null) {
                 spec = spec.and(OrdersSpecification.hasCurrency(dto.getCurrency()));
