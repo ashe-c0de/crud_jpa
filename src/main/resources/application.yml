@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    # 展示执行的sql
+    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        dialect: org.hibernate.dialect.MySQLDialect
+    open-in-view: false
+  datasource:
+    url: jdbc:mysql://mysql.sqlpub.com:3306/kappa_test?useSSL=false&serverTimezone=UTC
+    username: root_ashe
+    password: b704f87a20a9973d
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 10086
+
