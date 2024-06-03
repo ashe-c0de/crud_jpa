@@ -8,6 +8,7 @@ import com.ashe.database.view.CustomersSpecification;
 import com.ashe.database.view.RestResult;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
 import java.time.LocalDateTime;
@@ -23,6 +24,7 @@ public class CustomerService {
         this.snowflakeIdGenerator = snowflakeIdGenerator;
     }
 
+    @Transactional
     public RestResult create(CreateCustomerReq request) {
         try {
             Specification<Customer> spec = CustomersSpecification.hasCustomerName(request.getCustomerName());
