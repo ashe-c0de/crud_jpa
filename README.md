@@ -1,4 +1,4 @@
-# Project Name
+# Crud_jpa
 
 This is a demo about using JPA.😊🚀
 
