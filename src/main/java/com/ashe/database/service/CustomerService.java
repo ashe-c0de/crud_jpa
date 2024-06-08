@@ -1,9 +1,9 @@
 package com.ashe.database.service;
 
 import com.ashe.database.dao.CustomerRepository;
-import com.ashe.database.domain.Customer;
+import com.ashe.database.domain.entity.Customer;
 import com.ashe.database.domain.SnowflakeIdGenerator;
-import com.ashe.database.view.CreateCustomerReq;
+import com.ashe.database.view.request.CreateCustomerReq;
 import com.ashe.database.view.CustomersSpecification;
 import com.ashe.database.view.RestResult;
 import org.springframework.data.jpa.domain.Specification;

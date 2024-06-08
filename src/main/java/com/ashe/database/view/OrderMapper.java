@@ -1,6 +1,7 @@
 package com.ashe.database.view;
 
-import com.ashe.database.domain.Order;
+import com.ashe.database.domain.entity.Order;
+import com.ashe.database.view.response.OrderRsp;
 
 public class OrderMapper {
     public static OrderRsp OrderRsp(Order order) {

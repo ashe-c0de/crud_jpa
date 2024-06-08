@@ -1,7 +1,7 @@
 package com.ashe.database.controller;
 
 import com.ashe.database.service.OrderService;
-import com.ashe.database.view.OrderReq;
+import com.ashe.database.view.request.OrderReq;
 import com.ashe.database.view.RestResult;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;

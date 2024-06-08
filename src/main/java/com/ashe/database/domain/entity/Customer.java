@@ -1,4 +1,4 @@
-package com.ashe.database.domain;
+package com.ashe.database.domain.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

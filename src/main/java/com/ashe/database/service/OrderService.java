@@ -2,10 +2,12 @@ package com.ashe.database.service;
 
 import com.ashe.database.dao.CustomerRepository;
 import com.ashe.database.dao.OrderRepository;
-import com.ashe.database.domain.Customer;
-import com.ashe.database.domain.Order;
+import com.ashe.database.domain.entity.Customer;
+import com.ashe.database.domain.entity.Order;
 import com.ashe.database.domain.SnowflakeIdGenerator;
 import com.ashe.database.view.*;
+import com.ashe.database.view.request.OrderReq;
+import com.ashe.database.view.response.OrderRsp;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;

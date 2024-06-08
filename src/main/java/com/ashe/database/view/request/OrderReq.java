@@ -1,19 +1,24 @@
-package com.ashe.database.view;
+package com.ashe.database.view.request;
 
+
+import com.ashe.database.view.Page;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @Setter
 @Getter
-public class OrderRsp {
-    private Long orderId;
+public class OrderReq extends Page {
+
+    private Long customerId;
+
+    private String customerName;
+
     private LocalDate orderDate;
+
     private Integer totalAmount;
+
     private String currency;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
 
 }

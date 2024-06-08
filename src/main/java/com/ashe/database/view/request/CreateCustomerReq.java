@@ -1,4 +1,4 @@
-package com.ashe.database.view;
+package com.ashe.database.view.request;
 
 import lombok.Getter;
 import lombok.Setter;

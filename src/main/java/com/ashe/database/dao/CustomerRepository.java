@@ -1,6 +1,6 @@
 package com.ashe.database.dao;
 
-import com.ashe.database.domain.Customer;
+import com.ashe.database.domain.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;

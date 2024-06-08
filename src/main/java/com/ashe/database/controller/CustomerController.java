@@ -1,7 +1,7 @@
 package com.ashe.database.controller;
 
 import com.ashe.database.service.CustomerService;
-import com.ashe.database.view.CreateCustomerReq;
+import com.ashe.database.view.request.CreateCustomerReq;
 import com.ashe.database.view.RestResult;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;

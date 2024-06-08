@@ -1,6 +1,6 @@
 package com.ashe.database.view;
 
-import com.ashe.database.domain.Order;
+import com.ashe.database.domain.entity.Order;
 import org.springframework.data.jpa.domain.Specification;
 
 import java.time.LocalDate;

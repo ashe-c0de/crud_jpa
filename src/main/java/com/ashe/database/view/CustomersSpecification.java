@@ -1,6 +1,6 @@
 package com.ashe.database.view;
 
-import com.ashe.database.domain.Customer;
+import com.ashe.database.domain.entity.Customer;
 import org.springframework.data.jpa.domain.Specification;
 
 public class CustomersSpecification {
